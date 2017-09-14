@@ -1,0 +1,122 @@
+# depslib dependency file v1.0
+1504699022 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\main.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<time.h>
+	<sstream>
+	"FriendlySoccerMatch.h"
+	"Person.h"
+	"Coach.h"
+	"Player.h"
+	"Keeper.h"
+	"Team.h"
+
+1504699541 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\main.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<time.h>
+	"FriendlySoccerMatch.h"
+	"Person.h"
+	"Coach.h"
+	"Player.h"
+	"Keeper.h"
+	"Team.h"
+
+1503923031 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\coach.cpp
+	"Coach.h"
+
+1504256164 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\person.h
+	<string>
+
+1503922342 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\coach.h
+	"Person.h"
+
+1503929996 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlysoccermatch.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<stdlib.h>
+	"FriendlySoccerMatch.h"
+
+1503929117 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlysoccermatch.h
+	"FriendlyMatch.h"
+	"Team.h"
+
+1503923266 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlymatch.h
+
+1503922888 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\team.h
+	"Coach.h"
+	"Keeper.h"
+	"Player.h"
+
+1503922521 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\keeper.h
+	"Player.h"
+
+1503921957 d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\player.h
+	"Person.h"
+
+1503922267 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\keeper.cpp
+	<stdlib.h>
+	"Keeper.h"
+
+1504256169 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\person.cpp
+	"Person.h"
+
+1503926894 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\player.cpp
+	<stdlib.h>
+	"Player.h"
+
+1503923006 source:d:\cloud\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\team.cpp
+	<iostream>
+	"Team.h"
+
+1503919431 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\coach.cpp
+	"Coach.h"
+
+1503918742 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\coach.h
+	"Person.h"
+
+1504252564 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\person.h
+	<string>
+
+1503926396 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlysoccermatch.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<stdlib.h>
+	"FriendlySoccerMatch.h"
+
+1503925517 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlysoccermatch.h
+	"FriendlyMatch.h"
+	"Team.h"
+
+1503919666 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\friendlymatch.h
+
+1503919288 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\team.h
+	"Coach.h"
+	"Keeper.h"
+	"Player.h"
+
+1503918921 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\keeper.h
+	"Player.h"
+
+1503918357 c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\player.h
+	"Person.h"
+
+1503918667 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\keeper.cpp
+	<stdlib.h>
+	"Keeper.h"
+
+1504252569 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\person.cpp
+	"Person.h"
+
+1503923294 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\player.cpp
+	<stdlib.h>
+	"Player.h"
+
+1503919406 source:c:\users\jrj\onedrive - aalborg universitet\create\research\teaching\progcmpsoftsys\codeblocks\soccermanager\team.cpp
+	<iostream>
+	"Team.h"
+
