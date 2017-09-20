@@ -12,6 +12,7 @@ private:
     int length;
     int comparisons=0;
 public:
+    // constructor
     ArraySort(int org[], int len):
         length(len){
             for(int i=0;i<len;i++){
@@ -20,6 +21,7 @@ public:
             }
     }
 
+    // bubble sort function
     void bubbleSort(){
         bool swap_flag=true;
         int tmp;
@@ -45,6 +47,7 @@ public:
         return;
     }
 
+    // quick sort function
     void quickSort(int start,int stop){
         if(start<stop){
             int pNdx=start;
@@ -63,13 +66,14 @@ public:
             sorted[stop]=tmp;
 
             quickSort(start,pNdx-1);
-            cout<<comparisons<<" ";
+            //cout<<comparisons<<" ";
             quickSort(pNdx+1,stop);
-            cout<<comparisons<<" ";
+            //cout<<comparisons<<" ";
         }
         return;
     }
 
+    // function prints the original and sorted array
     void printArray(){
         cout<<"\nOriginal array:\n";
         for(int i=0;i<length;i++){
@@ -83,10 +87,12 @@ public:
         return;
     }
 
+    // function adds to complexity (comparisons)
     void addComplexity(){
         comparisons++;
     }
 
+    // function that prints complexity
     void printComplexity(){
         cout<<"\nNumber of comparisons:\n";
         cout<<comparisons;
