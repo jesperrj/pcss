@@ -107,12 +107,12 @@ int main()
 
     ArraySort array_sort=ArraySort(a,len);
 
-    array_sort.quickSort(0,len-1);
-    //array_sort.bubbleSort();
+    //array_sort.quickSort(0,len-1);
+    array_sort.bubbleSort();
 
     array_sort.printArray();
 
-    //array_sort.printComplexity();
+    array_sort.printComplexity();
 
     return 0;
 }
