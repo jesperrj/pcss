@@ -146,7 +146,7 @@ void FriendlySoccerMatch::startGame(Team t1, Team t2)
         } else
         {
             Player p = t2.getPlayer(shooter);
-            Keeper k = t2.getKeeper();
+            Keeper k = t1.getKeeper();
             int shot=p.shootsOnGoal();
             bool goal=!k.saveShot(shot);
             if(!printToFile){
