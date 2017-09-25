@@ -73,8 +73,8 @@ void head_insert(NodePtr& head, int the_number){
     temp_ptr = new Node;
 
     temp_ptr->data = the_number;
-
     temp_ptr->link = head;
+
     head = temp_ptr;
 }
 
@@ -83,7 +83,6 @@ void tail_insert(NodePtr& tail, int the_number){
     temp_ptr = new Node;
 
     temp_ptr->data = the_number;
-
     temp_ptr->link = NULL;
 
     tail->link = temp_ptr;
