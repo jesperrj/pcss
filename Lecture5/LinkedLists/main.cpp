@@ -17,16 +17,17 @@ int main()
 {
     // initialize temporary number and node pointers
     int temp_number=0;
-    NodePtr linklist_ptr, search_ptr, tail_ptr;
+    int linklist_length=3;
+    NodePtr linklist_ptr, search_ptr, tail_ptr, iter;
 
     // create the first node of the linked list
     linklist_ptr = new Node;
     tail_ptr=linklist_ptr;
 
     // fill linked list
-    for(int i=0;i<3;i++){
+    for(int i=0;i<linklist_length;i++){
         // get user input for linked list
-        cout<< "Enter integer for entry "<<i+1<<" (of 10) in the linked list:\n";
+        cout<< "Enter integer for entry "<<i+1<<" (of "<<linklist_length<<") in the linked list:\n";
         cin >> temp_number;
         cout<< "\n";
 
@@ -42,8 +43,8 @@ int main()
     // start reading entries from the head of the linked list
     search_ptr=linklist_ptr;
     cout<<"The entries stored in the linked list are (number, pointer):\n";
-    // print numbers stored in the linked list
-    for(int i=0;i<3;i++){
+    // print numbers stored in the linked list (using iterator)
+    for(iter=linklist_ptr; iter!=NULL; iter=iter->link){
         cout<<search_ptr->data<<", "<<search_ptr->link<<"\n";
         search_ptr=search_ptr->link;
     }
@@ -57,7 +58,7 @@ int main()
 
     // print numbers stored in the linked list
     search_ptr=linklist_ptr;
-    for(int i=0;i<4;i++){
+    for(iter=linklist_ptr; iter!=NULL; iter=iter->link){
         cout<<search_ptr->data<<", "<<search_ptr->link<<"\n";
         search_ptr=search_ptr->link;
     }
