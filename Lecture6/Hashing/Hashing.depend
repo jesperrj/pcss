@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1506949997 source:d:\cloud\git\pcss\lecture6\hashing\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	<cstdio>
+
