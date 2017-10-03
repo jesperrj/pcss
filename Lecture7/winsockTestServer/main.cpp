@@ -2,6 +2,7 @@
 
 #define WIN32_LEAN_AND_MEAN
 
+#include <iostream>
 #include <windows.h>
 #include <winsock2.h>
 #include <ws2tcpip.h>
@@ -14,6 +15,8 @@
 
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "27015"
+
+using namespace std;
 
 int __cdecl main(void)
 {
@@ -97,7 +100,7 @@ int __cdecl main(void)
 
         iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
         if (iResult > 0) {
-            printf("Bytes received: %d\n", iResult);
+            //printf("Bytes received: %d\n", iResult);
 
         // Echo the buffer back to the sender
             iSendResult = send( ClientSocket, recvbuf, iResult, 0 );
@@ -107,10 +110,13 @@ int __cdecl main(void)
                 WSACleanup();
                 return 1;
             }
-            printf("Bytes sent: %d\n", iSendResult);
+            //printf("Bytes sent: %d\n", iSendResult);
+
+            string recvString(recvbuf);
+            cout << "Message received: " << recvString << endl;
         }
-        else if (iResult == 0)
-            printf("Connection closing...\n");
+        else if (iResult == 0){}
+            //printf("Connection closing...\n");
         else  {
             printf("recv failed with error: %d\n", WSAGetLastError());
             closesocket(ClientSocket);
@@ -118,7 +124,8 @@ int __cdecl main(void)
             return 1;
         }
 
-    } while (iResult > 0);
+    //} while (iResult > 0);
+    } while (1);
 
     // shutdown the connection since we're done
     iResult = shutdown(ClientSocket, SD_SEND);

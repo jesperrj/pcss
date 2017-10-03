@@ -1,5 +1,6 @@
 #define WIN32_LEAN_AND_MEAN
 
+#include <iostream>
 #include <windows.h>
 #include <winsock2.h>
 #include <ws2tcpip.h>
@@ -15,6 +16,8 @@
 
 #define DEFAULT_BUFLEN 512
 #define DEFAULT_PORT "27015"
+
+using namespace std;
 
 int __cdecl main(int argc, char **argv)
 {
@@ -85,15 +88,26 @@ int __cdecl main(int argc, char **argv)
     }
 
     // Send an initial buffer
-    iResult = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
-    if (iResult == SOCKET_ERROR) {
-        printf("send failed with error: %d\n", WSAGetLastError());
-        closesocket(ConnectSocket);
-        WSACleanup();
-        return 1;
-    }
+    do{
+        string sendString;
+        char input[512];
+        cout<< "Enter a message to send to server: (max 512 characters)\n";
+        cin.getline(input,sizeof(input));
+        //char tab2[1024];
+        //strcpy(tab2, sendString.c_str());
 
-    printf("Bytes Sent: %ld\n", iResult);
+        iResult = send( ConnectSocket, input, (int)sizeof(input), 0 );
+
+        //iResult = send( ConnectSocket, sendbuf, (int)strlen(sendbuf), 0 );
+        if (iResult == SOCKET_ERROR) {
+            printf("send failed with error: %d\n", WSAGetLastError());
+            closesocket(ConnectSocket);
+            WSACleanup();
+            return 1;
+        }
+        //printf("Bytes Sent: %ld\n", iResult);
+    } while(1);
+
 
     // shutdown the connection since no more data will be sent
     iResult = shutdown(ConnectSocket, SD_SEND);
@@ -106,16 +120,19 @@ int __cdecl main(int argc, char **argv)
 
     // Receive until the peer closes the connection
     do {
-
         iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
-        if ( iResult > 0 )
-            printf("Bytes received: %d\n", iResult);
+        if ( iResult > 0 ){}
+            //printf("Bytes received: %d\n", iResult);
         else if ( iResult == 0 )
             printf("Connection closed\n");
         else
             printf("recv failed with error: %d\n", WSAGetLastError());
 
-    } while( iResult > 0 );
+    //} while( iResult > 0 );
+    } while(1);
+
+    string recString(recvbuf);
+    cout<<recString<<endl;
 
     // cleanup
     closesocket(ConnectSocket);
