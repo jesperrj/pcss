@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1507820820 source:d:\cloud\git\pcss\lecture7\winsocktestserversimple\main.cpp
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+
