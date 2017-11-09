@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1510218216 source:d:\cloud\git\pcss\lecture8\transferboxexample\main.cpp
+	<iostream>
+	<mutex>
+	<thread>
+	<chrono>
+

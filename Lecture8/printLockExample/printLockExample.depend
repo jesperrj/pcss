@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1510218539 source:d:\cloud\git\pcss\lecture8\printlockexample\main.cpp
+	<iostream>
+	<thread>
+	<mutex>
+
