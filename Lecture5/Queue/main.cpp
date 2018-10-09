@@ -5,7 +5,18 @@ using namespace std;
 // function declarations
 struct Node{
     int data;
+    int priority;
     Node *link;
+
+    Node(int newData):
+        data(newData),
+        priority(0),
+        link(NULL){};
+
+    Node(int newData, int p):
+        data(newData),
+        priority(p),
+        link(NULL){};
 };
 typedef Node* NodePtr;
 
@@ -36,10 +47,12 @@ int main()
         if(i==0){
             queue_in->data = temp_number;
             queue_in->link = NULL;
+
         }else{
             add_queue(queue_in, temp_number);
         }
     }
+
 
     // start reading entries from the end of the queue
     cout<<"Retrieving "<<retrieve_number<<" values from the queue:\n";
@@ -56,10 +69,7 @@ int main()
 // function definitions
 void add_queue(NodePtr& queue_in, int the_number){
     NodePtr temp_ptr;
-    temp_ptr = new Node;
-
-    temp_ptr->data = the_number;
-    temp_ptr->link = NULL;
+    temp_ptr = new Node(the_number);
 
     queue_in->link = temp_ptr;
 
