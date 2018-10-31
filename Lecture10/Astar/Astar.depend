@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1540908729 source:d:\cloud\git\pcss\lecture10\astar\implementation.cpp
+	<iostream>
+	<iomanip>
+	<map>
+	<set>
+	<array>
+	<vector>
+	<utility>
+	<queue>
+	<tuple>
+	<algorithm>
+	<cstdlib>
+
+1540909344 source:d:\cloud\git\pcss\lecture10\astar\main.cpp
+	<iostream>
+	"implementation.cpp"
+
+1540909855 d:\cloud\git\pcss\lecture10\astar\implementation.cpp
+	<iostream>
+	<iomanip>
+	<map>
+	<set>
+	<array>
+	<vector>
+	<utility>
+	<queue>
+	<tuple>
+	<algorithm>
+	<cstdlib>
+
