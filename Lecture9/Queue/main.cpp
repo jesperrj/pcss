@@ -30,7 +30,7 @@ int main()
     int queue_length = 5;
     int retrieve_number = 3;
     int temp_number;
-    NodePtr queue_in, queue_out;
+    NodePtr queue_in, queue_out; // queue_in: tail, queue_out: head
 
     // create new queue
     queue_in = new Node;
@@ -68,6 +68,7 @@ int main()
 
 // function definitions
 void add_queue(NodePtr& queue_in, int the_number){
+    // node added to the end of the list
     NodePtr temp_ptr;
     temp_ptr = new Node(the_number);
 
@@ -77,6 +78,7 @@ void add_queue(NodePtr& queue_in, int the_number){
 }
 
 void retrieve_queue(NodePtr& queue_out){
+    //node retrieved from the beginning of the list.
 
     NodePtr temp_ptr=queue_out->link;
 
