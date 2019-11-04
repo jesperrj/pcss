@@ -12,3 +12,11 @@
 	<stdlib.h>
 	<stdio.h>
 
+1507028652 source:d:\cloud\git\pcss\lecture11\winsocktestclient\main.cpp
+	<iostream>
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+

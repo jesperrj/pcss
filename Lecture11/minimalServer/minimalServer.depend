@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1544088384 source:d:\cloud\git\pcss\lecture11\minimalserver\main.cpp
+	<windows.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<stdlib.h>
+	<stdio.h>
+

@@ -12,5 +12,7 @@ public:
 	virtual int getHomePoints()=0;
 	virtual int getGuestPoints()=0;
 	virtual string getResultText()=0;
+
+	//virtual int testFunc()=0;
 };
 #endif // FRIENDLYMATCH_H

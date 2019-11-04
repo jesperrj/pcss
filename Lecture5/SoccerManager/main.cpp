@@ -4,10 +4,10 @@
 #include <time.h>
 
 #include "FriendlySoccerMatch.h"
-#include "Person.h"
-#include "Coach.h"
-#include "Player.h"
-#include "Keeper.h"
+//#include "Person.h"
+//#include "Coach.h"
+//#include "Player.h"
+//#include "Keeper.h"
 #include "Team.h"
 
 using namespace std;
