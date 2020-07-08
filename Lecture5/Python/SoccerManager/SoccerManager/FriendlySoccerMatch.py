@@ -56,7 +56,7 @@ class FriendlySoccerMatch:
 
             shooter = random.randint(0, 9)
 
-            if random.randint(0, int((strength1 + strength2) - strength1)) <= 0:
+            if random.randint(int(-strength1), int(strength2)) <= 0:
                 ptmp = t1.get_player(shooter)
                 ktmp = t2.get_keeper()
                 shot = ptmp.shoots_on_goal()
