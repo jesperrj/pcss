@@ -1,5 +1,6 @@
 from FriendlySoccerMatch import *
-
+import matplotlib.pyplot as plt
+import numpy as np
 
 players1 = []
 players1.append(Player("K. Dolberg", 18, 6, 9, 10))
@@ -44,3 +45,22 @@ for i in range(10):
 friendlyMatch = FriendlySoccerMatch()
 friendlyMatch.start_game(team1, team2)
 friendlyMatch.print_result_text()
+
+friendlyMatch.simulate_games(team1, team2, 2000)
+
+"""
+# Data for plotting
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s)
+
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+       title='About as simple as it gets, folks')
+ax.grid()
+
+fig.savefig("test.png")
+plt.show()
+
+"""
