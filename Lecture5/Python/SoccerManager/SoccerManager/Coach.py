@@ -8,5 +8,5 @@ class Coach(Person):
         Person.__init__(self, name, age)
         __experience = exp
 
-    def get_experience(self):
+    def get_experience(self) -> int:
         return self.__experience

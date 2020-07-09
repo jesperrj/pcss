@@ -21,20 +21,20 @@ class Player(Person):
         print("Age: " + str(self.get_age()))
         print("Stats: ["+str(self.__strength)+","+str(self.__shots)+","+str(self.__motivation)+"]")
 
-    def get_goals(self):
+    def get_goals(self) -> int:
         return self.__goals
 
     def add_goal(self):
         self.__goals += 1
 
-    def shoots_on_goal(self):
+    def shoots_on_goal(self) -> int:
         self.__shots = max(1, min(10, self.__shots+random.randint(-1, 1)))
         ret = max(1, min(10, self.__shots+random.randint(-1, 1)))
         return ret
 
-    def get_strength(self):
+    def get_strength(self) -> int:
         return self.__strength
 
-    def get_motivation(self):
+    def get_motivation(self) -> int:
         return self.__motivation
 

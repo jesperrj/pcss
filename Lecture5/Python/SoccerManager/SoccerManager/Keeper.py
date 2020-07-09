@@ -8,7 +8,7 @@ class Keeper(Player):
         Player.__init__(self, name, age, st, sh, mo)
         self.__reaction = re
 
-    def save_shot(self, shot):
+    def save_shot(self, shot) -> bool:
         r = random.randint(-1, 1)
         ret = max(1, min(10, self.__reaction+r))
 

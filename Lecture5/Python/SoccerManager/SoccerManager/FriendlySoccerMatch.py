@@ -57,8 +57,8 @@ class FriendlySoccerMatch:
             shooter = random.randint(0, 9)
 
             if random.randint(int(-strength1), int(strength2)) <= 0:
-                ptmp = t1.get_player(shooter)
-                ktmp = t2.get_keeper()
+                ptmp = t1.get_player(shooter)   # type: Player
+                ktmp = t2.get_keeper()          # type: Keeper
                 shot = ptmp.shoots_on_goal()
                 if ktmp.save_shot(shot):
                     goal = False
@@ -77,8 +77,8 @@ class FriendlySoccerMatch:
                 else:
                     print(" " + t2.get_keeper().get_name() + " saves brilliantly.")
             else:
-                ptmp = t2.get_player(shooter)
-                ktmp = t1.get_keeper()
+                ptmp = t2.get_player(shooter)   # type: Player
+                ktmp = t1.get_keeper()          # type: Keeper
                 shot = ptmp.shoots_on_goal()
                 if ktmp.save_shot(shot):
                     goal = False
