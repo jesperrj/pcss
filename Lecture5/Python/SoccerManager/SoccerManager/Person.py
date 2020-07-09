@@ -2,17 +2,17 @@ class Person:
     __name = "J. Doe"
     __age = "18"
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int):
         self.__name = name
         self.__age = age
 
-    def set_name(self, name):
+    def set_name(self, name: str):
         self.__name = name
 
     def get_name(self) -> str:
         return self.__name
 
-    def set_age(self, age):
+    def set_age(self, age: int):
         self.__age = age
 
     def get_age(self) -> int:

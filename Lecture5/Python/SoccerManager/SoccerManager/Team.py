@@ -1,5 +1,6 @@
 from Coach import *
 from Keeper import *
+from typing import List
 
 
 class Team:
@@ -8,7 +9,7 @@ class Team:
     __keeper = Keeper("J. Doe", 35, 5, 5, 5, 5)
     __players = []
 
-    def __init__(self, name, coach, keeper, players):
+    def __init__(self, name: str, coach: Coach, keeper: Keeper, players: List[Player]):
         self.__name = name
         self.__coach = coach
         self.__keeper = keeper
@@ -35,7 +36,7 @@ class Team:
     def get_coach(self) -> Coach:
         return self.__coach
 
-    def get_player(self, num) -> Player:
+    def get_player(self, num: int) -> Player:
         return self.__players[num]
 
     def get_keeper(self) -> Keeper:
@@ -47,8 +48,8 @@ class Team:
     def print_coach(self):
         print(self.__coach.get_name())
 
-    def print_player(self, num):
+    def print_player(self, num: int):
         print(self.__players[num].get_name())
 
-    def add_goal(self, num):
+    def add_goal(self, num: int):
         self.__players[num].add_goal()

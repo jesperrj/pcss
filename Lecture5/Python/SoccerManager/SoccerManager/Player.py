@@ -9,7 +9,7 @@ class Player(Person):
     __motivation = 1
     __goals = 0
 
-    def __init__(self, name, age, st, sh, mo):
+    def __init__(self, name: str, age: int, st: int, sh: int, mo: int):
         Person.__init__(self, name, age)
         self.__strength = st
         self.__shots = sh

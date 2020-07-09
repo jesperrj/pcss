@@ -7,16 +7,16 @@ class FriendlySoccerMatch:
     __pointsHome = 0
     __pointsGuest = 0
 
-    def get_home_team(self):
+    def get_home_team(self) -> str:
         return self.__nameHomeTeam
 
-    def get_guest_team(self):
+    def get_guest_team(self) -> str:
         return self.__nameGuestTeam
 
-    def get_home_points(self):
+    def get_home_points(self) -> int:
         return self.__pointsHome
 
-    def get_guest_points(self):
+    def get_guest_points(self) -> int:
         return self.__pointsGuest
 
     def print_result_text(self):
