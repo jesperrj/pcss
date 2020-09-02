@@ -2,6 +2,7 @@ from Team import *
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 class FriendlySoccerMatch:
     __nameHomeTeam = "A"
     __nameGuestTeam = "B"
